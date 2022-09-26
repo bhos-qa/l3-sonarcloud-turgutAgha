@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.turgut.MainTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-26T22:49:59" hostname="DESKTOP-43S1F4E" time="0.021">
+  <properties/>
+  <testcase name="testGetMCurrentLevel()" classname="org.turgut.MainTest" time="0.021"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
