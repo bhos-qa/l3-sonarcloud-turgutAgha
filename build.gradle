@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'jacoco'
+    id 'org.sonarqube' version '$sonarqubeVersion'
 }
 
 group 'org.example'
@@ -28,4 +29,19 @@ jacocoTestReport {
     reports {
         xml.enabled true
     }
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "bhos-qa_l3-sonarcloud-turgutAgha"
+    property "sonar.organization", "bhos-qa"
+    property "sonar.projectName", "bhos-qa_l3-sonarcloud-turgutAgha"
+    property "sonar.host.url", "https://sonarcloud.io"
+    property "sonar.scm.forceReloadAll", "true"
+    property "sonar.java.coveragePlugin", "jacoco"
+    property "sonar.jacoco.reportPath", "build/jacoco/test.exec"
+    property "sonar.junit.reportsPath", "build/test-results/test"
+    property "sonar.java.checkstyle.reportPaths", "build/reports/checkstyle/main.xml"
+    property "sonar.qualitygate.wait", true
+  }
 }
