@@ -3,12 +3,8 @@ package org.turgut;
 public class Main {
 
     enum PermissionLevel {
-        ADMIN,
-        DEVELOPER,
-        USER
+        ADMIN, DEVELOPER, USER;
     }
-
-    ;
 
     public static class PermissionManager {
         private PermissionLevel mCurrentLevel = PermissionLevel.USER;
@@ -30,12 +26,5 @@ public class Main {
         public void setMCurrentLevel(PermissionLevel level) {
             this.mCurrentLevel = level;
         }
-    }
-
-    public static void main(String[] args) {
-        PermissionManager pm = new PermissionManager();
-        System.out.println(pm.getMCurrentLevel());
-        pm.setMCurrentLevel(PermissionLevel.ADMIN);
-        System.out.println(pm.getMCurrentLevel());
     }
 }
