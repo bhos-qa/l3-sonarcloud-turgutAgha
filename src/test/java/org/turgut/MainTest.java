@@ -8,7 +8,7 @@ import org.turgut.Main.PermissionLevel;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class MainTest {
+class MainTest {
     PermissionManager pm;
 
     @BeforeEach
