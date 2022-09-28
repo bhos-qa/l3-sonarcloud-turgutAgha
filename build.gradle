@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     id 'jacoco'
-    id 'org.sonarqube' version '$sonarqubeVersion'
+    id 'org.sonarqube' version "$sonarqubeVersion"
 }
 
 group 'org.example'
