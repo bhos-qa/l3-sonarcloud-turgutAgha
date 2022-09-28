@@ -10,17 +10,11 @@ public class Main {
         private PermissionLevel mCurrentLevel = PermissionLevel.USER;
 
         public String getMCurrentLevel() {
-            switch (this.mCurrentLevel) {
-                case USER:
-                    return "USER";
-                case ADMIN:
-                    return "ADMIN";
-                case DEVELOPER:
-                    return "DEVELOPER";
-                default:
-                    break;
-            }
-            return null;
+            return switch (this.mCurrentLevel) {
+                case USER -> "USER";
+                case DEVELOPER -> "DEVELOPER";
+                case ADMIN -> "ADMIN";
+            };
         }
 
         public void setMCurrentLevel(PermissionLevel level) {
