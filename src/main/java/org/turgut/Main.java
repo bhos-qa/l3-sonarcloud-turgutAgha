@@ -18,9 +18,9 @@ public class Main {
                 case DEVELOPER:
                     return "DEVELOPER";
                 default:
-                    return null;
+                    break;
             }
-
+            return null;
         }
 
         public void setMCurrentLevel(PermissionLevel level) {
