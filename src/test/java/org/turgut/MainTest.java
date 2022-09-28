@@ -23,13 +23,15 @@ public class MainTest {
 
     @Test
     void testSetMCurrentLevel(){
-        String[] permissionLevels = {"ADMIN", "DEVELOPER", "USER"};
-        int counter = 0;
-        for(PermissionLevel pl : PermissionLevel.values()){
-            pm.setMCurrentLevel(pl);
-            assertEquals(permissionLevels[counter], pm.getMCurrentLevel());
-            counter++;
-        }
+        pm.setMCurrentLevel(PermissionLevel.ADMIN);
+        assertEquals("ADMIN", pm.getMCurrentLevel());
+
+        pm.setMCurrentLevel(PermissionLevel.DEVELOPER);
+        assertEquals("DEVELOPER", pm.getMCurrentLevel());
+
+        pm.setMCurrentLevel(PermissionLevel.USER);
+        assertEquals("USER", pm.getMCurrentLevel());
+
     }
 
 }
