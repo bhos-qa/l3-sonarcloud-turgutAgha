@@ -3,8 +3,7 @@ package org.turgut;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.turgut.Main.PermissionManager;
-import org.turgut.Main.PermissionLevel;
+import org.turgut.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
